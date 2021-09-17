@@ -7,19 +7,21 @@ function Beer(props) {
 
   return (
     <li className='beerListItem'>
-      <img 
-        className='beerImg' 
-        src={image_url} 
-        alt={name} 
-      />
-      <div>
-        <h3>{name}</h3>
-        <h4>{abv} abv | {tagline}</h4>
+      <div className="beerImgContainer">
+        <img 
+          className='beerImg' 
+          src={image_url} 
+          alt={name} 
+        />
+      </div>
+      <div className="beerInfo">
+        <h2>{name}</h2>
+        <h3>{abv} abv | {tagline}</h3>
         <p>{description}</p>
         <button className='heartBtn' onClick={() => {!isLiked ? changeLike(true) : changeLike(false)}}>
           {isLiked ? 
-            <i style={{color: "pink"}} class="fas fa-heart"></i> :
-              <i style={{color: "black"}} className="far fa-heart"></i>
+            <i style={{color: "rgb(235, 157, 229)"}} class="fas fa-heart fa-2x"></i> :
+              <i style={{color: "rgb(156, 104, 152)"}} className="far fa-heart fa-2x"></i>
           }
         </button>
       </div>
