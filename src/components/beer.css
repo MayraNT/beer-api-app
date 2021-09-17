@@ -1,12 +1,16 @@
-.beer {
+.beerListItem {
   list-style: none;
-  display: flex;
+  /* display: flex; */
 }
 
 .beerImg {
-  height: 200px;
+  height: 180px;
 }
 
 p {
   font-size: 16px;
+}
+
+.heartBtn {
+  cursor: pointer;
 }

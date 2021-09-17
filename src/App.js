@@ -37,8 +37,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <ul>
-            {this.state.beers.map((beer) => {
-              return <Beer singleBeer={beer} />
+            {this.state.beers.map((beer, index) => {
+              return <Beer singleBeer={beer} key={index}/>
             })}
           </ul>
         </header>
