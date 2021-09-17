@@ -12,11 +12,16 @@ class Beer extends Component {
     return (
       <li className='beer'>
         <img 
-        className='beerImg' 
-        src={this.props.singleBeer.image_url} 
-        alt={this.props.singleBeer.name} />
-        <h2>{this.props.singleBeer.name}</h2>
-        <button>Like Button</button>
+          className='beerImg' 
+          src={this.props.singleBeer.image_url} 
+          alt={this.props.singleBeer.name} 
+        />
+        <div>
+          <h3>{this.props.singleBeer.name}</h3>
+          <h5>{this.props.singleBeer.abv} abv | {this.props.singleBeer.tagline}</h5>
+          <p>{this.props.singleBeer.description}</p>
+          <i class="far fa-heart"></i>
+        </div>
       </li>
     )
   }

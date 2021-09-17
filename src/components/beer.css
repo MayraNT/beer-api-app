@@ -1,7 +1,12 @@
 .beer {
   list-style: none;
+  display: flex;
 }
 
 .beerImg {
   height: 200px;
+}
+
+p {
+  font-size: 16px;
 }
