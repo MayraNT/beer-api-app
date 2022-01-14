@@ -3,7 +3,7 @@ import './beer.css'
 
 function Beer(props) {
   const { image_url, name, abv, tagline, description } = props.singleBeer;
-  const [isLiked, changeLike] = useState(false)
+  const [isLiked, setIsLiked] = useState(false)
 
   return (
     <li className='beerListItem'>
@@ -18,7 +18,7 @@ function Beer(props) {
         <h2>{name}</h2>
         <h3>{abv} abv | {tagline}</h3>
         <p>{description}</p>
-        <button className='heartBtn' onClick={() => {!isLiked ? changeLike(true) : changeLike(false)}}>
+        <button className='heartBtn' onClick={() => {!isLiked ? setIsLiked(true) : setIsLiked(false)}}>
           {isLiked ? 
             <i style={{color: "rgb(156, 104, 152)"}} class="fas fa-heart fa-2x"></i> :
               <i style={{color: "rgb(156, 104, 152)"}} className="far fa-heart fa-2x"></i>
