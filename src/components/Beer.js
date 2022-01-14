@@ -20,7 +20,7 @@ function Beer(props) {
         <p>{description}</p>
         <button className='heartBtn' onClick={() => {!isLiked ? changeLike(true) : changeLike(false)}}>
           {isLiked ? 
-            <i style={{color: "rgb(235, 157, 229)"}} class="fas fa-heart fa-2x"></i> :
+            <i style={{color: "rgb(156, 104, 152)"}} class="fas fa-heart fa-2x"></i> :
               <i style={{color: "rgb(156, 104, 152)"}} className="far fa-heart fa-2x"></i>
           }
         </button>
